@@ -26,11 +26,11 @@ export class QuoteService{
         );
     }
 
-    set email(newVal:string) {
+    set email2(newVal:string) {
         this._email=newVal;
     }
 
-    get email() : string {
+    get email2() : string {
         return this._email;
     }
 

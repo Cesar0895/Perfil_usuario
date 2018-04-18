@@ -1,0 +1,44 @@
+[
+    {
+        "name":"Pepito Perez",
+        "email":"pepito@hotmail.com",
+        "photo":"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX28408818.jpg",
+        "sports":[
+            {
+                "name":"soccer",
+                "color":"#FF0000"
+            },
+            {
+                "name":"Basket ball",
+                "color":"#00FF00"
+            },
+            {
+                "name":"Tennis",
+                "color":"#0000FF"
+            }
+
+        ]
+
+    },
+    {
+        "name":"Leanne Graham",
+        "email":"Leanne@hotmail.com",
+        "photo":"https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX28408818.jpg",
+        "sports":[
+            {
+                "name":"soccer",
+                "color":"#FF0000"
+            },
+            {
+                "name":"Basket ball",
+                "color":"#00FF00"
+            },
+            {
+                "name":"Tennis",
+                "color":"#0000FF"
+            }
+
+        ]
+
+    }
+]

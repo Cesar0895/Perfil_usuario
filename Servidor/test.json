@@ -1,0 +1,17 @@
+[
+    {
+        "title":"La casa de papel",
+        "category":"Objects",
+        "description":"Es una serie de un profesor que recluta gente para robar"
+    },
+    {
+        "title":"Avengers",
+        "category":"Nature",
+        "description":"Superheroes"
+    },
+    {
+        "title":"Toy story",
+        "category":"People",
+        "description":"juguetes"
+    }
+]

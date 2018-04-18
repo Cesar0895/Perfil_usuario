@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { QuoteService } from "../services/quotes";
 
 /**
  * Generated class for the DetallesPage page.
@@ -15,7 +16,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetallesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public quotes:QuoteService) {
+    console.log("Detalle pages");
+    this.quotes.getQuotes(); 
   }
 
   ionViewDidLoad() {

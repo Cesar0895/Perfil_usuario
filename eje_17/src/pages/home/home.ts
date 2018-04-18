@@ -10,26 +10,28 @@ import { QuoteService } from "../services/quotes";
 export class HomePage {
 
   public data:any={ 
-    email:"",
+    email:""
 
   }
 
   constructor(public navCtrl: NavController, public quotes:QuoteService) {
     console.log("Home pages")
-    this.quotes.getQuotes(); 
-    this.quotes.email="";
+    this.quotes.getQuotes();
+    //console.log("email-->"+this.quotes.getQuotes.name); 
+    this.quotes.email2="";
   
-    //this.curpSrv.letra="H"==this.curpSrv.curp.substring(10,11);
+    
   }
 
   Validar() {
-    this.quotes.email=this.data.email;
-    console.log("email: "+this.quotes.data.email);
-    if (this.quotes.data.email == this.data.email) {
-      console.log("email2: "+this.data.email);
+    
+    this.quotes.email2=this.data.email;
+    
+    if (this.quotes.data.email != this.data.email) {
+      console.log("email2: "+this.quotes.data.email);
       this.navCtrl.push(UserPage);
-    } else {
-      console.log("correo incorrecto")
+    } else{
+      alert("email incorrecto");
     }
     
 }
