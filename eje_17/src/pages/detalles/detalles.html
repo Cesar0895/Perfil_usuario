@@ -14,9 +14,16 @@
 
 
 <ion-content padding>
-  <ion-list >
-    <button ion-item *ngFor="let item of quotes.data" >
-       {{item.sports.name}}
-    </button>
-  </ion-list>
+  <ion-card #myCard *ngFor="let item of quotes.data" >
+
+    <ion-card-content *ngFor="let sport of item.sports" >
+      <ion-list >
+        
+        <ion-item color="{{sport.color}}" >
+          {{sport.name}}
+
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

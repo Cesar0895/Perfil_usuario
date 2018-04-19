@@ -5,7 +5,7 @@ import { Http } from "@angular/http";
 export class QuoteService{
     //private http:any;
     public data:any;
-    private _email:string;
+    //private _email:string;
 
 
     constructor(private http:Http){
@@ -26,13 +26,13 @@ export class QuoteService{
         );
     }
 
-    set email2(newVal:string) {
+    /**set email2(newVal:string) {
         this._email=newVal;
     }
 
     get email2() : string {
         return this._email;
-    }
+    }*/
 
    
 }

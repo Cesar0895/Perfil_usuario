@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, Item } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { UserPage } from "../user/user";
 import { QuoteService } from "../services/quotes";
 
@@ -10,25 +10,25 @@ import { QuoteService } from "../services/quotes";
 export class HomePage {
 
   public data:any={ 
-    email:""
+    email:''
 
-  }
+  };
 
   constructor(public navCtrl: NavController, public quotes:QuoteService) {
-    console.log("Home pages")
+    console.log("Home pages");
     this.quotes.getQuotes();
     //console.log("email-->"+this.quotes.getQuotes.name); 
-    this.quotes.email2="";
+    
   
     
   }
 
   Validar() {
     
-    this.quotes.email2=this.data.email;
+    //this.quotes.email2=this.data.email;
     
-    if (this.quotes.data.email != this.data.email) {
-      console.log("email2: "+this.quotes.data.email);
+    if (this.data.email != this.quotes.data.email) {
+      console.log("email: "+this.quotes.data.email);
       this.navCtrl.push(UserPage);
     } else{
       alert("email incorrecto");
